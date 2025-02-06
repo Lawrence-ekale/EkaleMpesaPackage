@@ -1,0 +1,33 @@
+{
+    "name": "ekale/laravel-mpesa",
+    "description": "This is a package for integrating mpesa to your laravel application without wasting time",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ekale\\LaravelMpesa\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lawrence Ekale",
+            "email": "info@lawrenceekale.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ekale\\Mpesa\\Providers\\MpesaServiceProvider"
+            ],
+            "aliases": {
+                "Mpesa": "Ekale\\Mpesa\\Facades\\Mpesa"
+            }
+        }
+    }
+}
