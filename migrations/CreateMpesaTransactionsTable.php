@@ -8,11 +8,11 @@ class CreateMpesaTransactionsTable extends Migration
     {
         Schema::create('ekale_mpesa_transactions', function (Blueprint $table) {
             $table->id();
-            $table->string('transaction_id');
-            $table->string('phone');
+            $table->string('transaction_id')->unique();
+            $table->string('phone')->nullable();
             $table->decimal('amount', 10, 2);
-            $table->string('reference');
-            $table->string('status');
+            $table->string('reference')->nullable();
+            $table->boolean('is_confirmed')->default(false);
             $table->timestamps();
         });
     }

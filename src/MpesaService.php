@@ -79,7 +79,7 @@ class MpesaService
                     'PartyB' => $this->shortcode,
                     'PhoneNumber' => $phone,
                     'CallBackURL' => url($this->callbackUrl), // Use the callback URL from config
-                    'AccountReference' => $reference,
+                    'AccountReference' => $reference,//account number
                     'TransactionDesc' => 'Payment for ' . $reference,
                 ],
             ]);
