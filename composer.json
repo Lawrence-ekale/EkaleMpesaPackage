@@ -25,10 +25,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ekale\\Mpesa\\Providers\\MpesaServiceProvider"
+                "Ekale\\LaravelMpesa\\Providers\\MpesaServiceProvider"
             ],
             "aliases": {
-                "Mpesa": "Ekale\\Mpesa\\Facades\\Mpesa"
+                "Mpesa": "Ekale\\LaravelMpesa\\Facades\\Mpesa"
             }
         }
     }
